@@ -1,0 +1,10 @@
+image: suburbandad/rocksdb-ldb:latest
+manifests:
+  - image: suburbandad/rocksdb-ldb:latest-amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: suburbandad/rocksdb-ldb:latest-arm64
+    platform:
+      architecture: arm64
+      os: linux
