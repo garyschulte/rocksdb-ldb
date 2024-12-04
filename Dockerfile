@@ -8,7 +8,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Clone the RocksDB repository
-RUN git clone --depth 1 https://github.com/facebook/rocksdb.git && \
+RUN git clone --depth 1 --branch v9.7.3 https://github.com/facebook/rocksdb.git && \
     cd rocksdb && make all && \
     cp ./sst_dump /usr/local/bin && \
     cp ./db_sanity_test /usr/local/bin && \
